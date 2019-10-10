@@ -5,8 +5,8 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
-  border: 1px solid #b1e8ed;
-  background-color: #e6f8f9;
+  border: 1px solid black;
+  background-color: white;
   top: 90px;
   right: 40px;
   z-index: 5;
