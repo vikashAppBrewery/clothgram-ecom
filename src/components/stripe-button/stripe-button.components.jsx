@@ -7,20 +7,20 @@ const StripeCheckoutButton = ({ price }) => {
 
   const onToken = token => {
     console.log(token);
-    alert("Payment successful");
+    alert("Payment Succesful!");
   };
 
   return (
     <StripeCheckout
       label="Pay Now"
-      name="Clothgram ltd"
+      name="Clothgram Clothing Ltd."
       billingAddress
       shippingAddress
       image="https://svgshare.com/i/CUz.svg"
-      description={`your total is ₹${price}`}
+      description={`Your total is $${price}`}
       amount={priceForStripe}
       panelLabel="Pay Now"
-      tokens={onToken}
+      token={onToken}
       stripeKey={publishableKey}
     />
   );
